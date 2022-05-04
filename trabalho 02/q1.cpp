@@ -56,8 +56,8 @@ int	main (int argn, char **argv)	{
                 grab_chopstick (id, right_chopstick, "right ");
                 grab_chopstick (id, left_chopstick, "left"); 
             }else{
-               grab_chopstick (id, right_chopstick, "left ");
-               grab_chopstick (id, left_chopstick, "right"); 
+               grab_chopstick (id, left_chopstick, "left ");
+               grab_chopstick (id, right_chopstick, "right"); 
             }
 	        
 
@@ -94,24 +94,4 @@ void down_chopsticks (int c1,int c2)
    	    pthread_mutex_unlock (&chopstick[c2]);
 }
 /*
-Philosopher 3 is done thinking and now ready to eat.
-Philosopher 3: got right  chopstick 3
-Philosopher 3: got left chopstick 4
-Philosopher 3: eating.
-Philosopher 1 is done thinking and now ready to eat.
-Philosopher 4 is done thinking and now ready to eat.
-Philosopher 2 is done thinking and now ready to eat.
-Philosopher 2: got left  chopstick 2
-Philosopher 0 is done thinking and now ready to eat.
-Philosopher 0: got left  chopstick 0
-Philosopher 0: got right chopstick 1
-Philosopher 0: eating.
-Philosopher 3: got right  chopstick 3
-Philosopher 3: got left chopstick 4
-Philosopher 3: eating.
-Philosopher 0: got left  chopstick 0
-Philosopher 1: got right  chopstick 1
-Philosopher 3: got right  chopstick 3
-Philosopher 4: got left  chopstick 4
-
-Não, pois, no caso em questao o filosofo 2 ficou sem pegar o garfo no mesmo momento que os outros 
+SIM, RESOLVE O PROBLEMA DI DEADLOCK
