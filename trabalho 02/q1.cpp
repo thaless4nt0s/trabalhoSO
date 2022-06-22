@@ -94,4 +94,4 @@ void down_chopsticks (int c1,int c2)
    	    pthread_mutex_unlock (&chopstick[c2]);
 }
 /*
-SIM, RESOLVE O PROBLEMA DI DEADLOCK
+SIM, RESOLVE O PROBLEMA
